@@ -389,24 +389,24 @@
             <tbody><tr>
                 <td align="center">
                     <center>
-                        <span style="font-size:24px"><a>Bo Yuan</a> <sup>1</sup></span>
+                        <span style="font-size:24px"><a href="http://boyuan.global-optimization.com/">Bo Yuan</a> <sup>1</sup></span>
                     </center>
                 </td>
                 <td width="36">
                 </td><td align="center">
                     <center>
-                        <span style="font-size:24px"><a>Xueqian Wang</a> <sup>1</sup></span>
+                        <span style="font-size:24px"><a href="https://scholar.google.com/citations?user=h9dN_ykAAAAJ">Xueqian Wang</a> <sup>1</sup></span>
                     </center>
                 </td>
                 <td width="36">
                 </td><td align="center">
                     <center>
-                        <span style="font-size:24px"><a>Ping Luo</a> <sup>2</sup></span>
+                        <span style="font-size:24px"><a href="http://luoping.me/">Ping Luo</a> <sup>2</sup></span>
                     </center>
                 <td width="36">
                 </td><td align="center">
                     <center>
-                        <span style="font-size:24px"><a>HuaZhe Xu</a> <sup>3</sup></span>
+                        <span style="font-size:24px"><a href="http://hxu.rocks/">HuaZhe Xu</a> <sup>3</sup></span>
                     </center>
             </tr>
         </tbody></table>
@@ -446,7 +446,7 @@
                 </td>
                 <td align="center" width="120px">
                     <center>
-                        <span style="font-size:24px"><a href="https://github.com/GeorgeCazenavette/mtt-distillation">[GitHub]</a></span><br>
+                        <span style="font-size:24px"><a href="https://github.com/gemcollector/TLDA">[GitHub]</a></span><br>
                     </center>
                 </td>
             </tr>
@@ -458,7 +458,7 @@
         <tbody><tr>
             <td width="260px">
                 <center>
-                    <img class="round" src="./TLDA/TLDA_look.png" style="width:1000px">
+                    <img class="round" src="./TLDA/TLDA_look.png" style="width:800px">
                 </center>
             </td>
         </tr>
@@ -498,10 +498,9 @@
 </tbody></table>
 <br>
 Augmenting observation in a task-agnostic
-manner (in the middle) distracts the agent’s decision,
+manner <i>(in the middle)</i> distracts the agent’s decision,
 hence it will damage agent’s asymptotic performance.
-This problem can be alleviated by task-aware data aug-
-mentation (in the bottom).
+This problem can be alleviated by task-aware data augmentation <i>(in the bottom)</i>.
 
 <hr>
 <center><h1>Method</h1></center>
@@ -820,6 +819,11 @@ augmentation. The preserved areas are highlighted in the K-matrix.
 </tbody></table>
 <hr>
 <h1 align="center">Generalization Performance</h1>
+The experiments demonstrate the effectiveness of TLDA in terms of both sample efficiency and generalization on 3 benchmarks. The agent trained with TLDA is able to acquire a good robust policy in different unseen environments.
+<p>
+    <br>
+</p>
+
 <center><span style="font-size:20px">DMC-GB</span></center>
 <table align="center">
     <tbody>
@@ -1223,7 +1227,7 @@ augmentation. The preserved areas are highlighted in the K-matrix.
     
     <tbody><tr>
         <td><a href="https://arxiv.org/abs/2202.09982"><img class="layered-paper-big" style="height:175px" src="./TLDA/paper.png"></a></td>
-        <td><span style="font-size:10pt">Yuan, Zhecheng and Ma, Guozheng and Mu, Yao and Xia, Bo and Yuan, Bo and Wang, Xueqian and Luo, Ping and Xu, Huazhe<br>
+        <td><span style="font-size:10pt">Z. Yuan,  G. Ma,  Y. Mu, B. Xia, B. Yuan, X. Wang,  P. Luo, H. Xu<br>
 				<b>Don't Touch What Matters: Task-Aware Lipschitz Data Augmentation for Visual Reinforcement Learning</b><br>
 				IJCAI, 2022.<br></span>
         </td>
@@ -1234,7 +1238,7 @@ augmentation. The preserved areas are highlighted in the K-matrix.
 <table align="center" width="600px">
     <tbody><tr>
         <td><span style="font-size:14pt"><center>
-				<a href="https://georgecazenavette.github.io/mtt-distillation/resources/bibtex.txt">[Bibtex]</a>
+				<a href="https://scholar.googleusercontent.com/scholar.bib?q=info:t1RgSzh6L14J:scholar.google.com/&output=citation&scisdr=CgXm7vjOEILH5G9I1dI:AAGBfm0AAAAAYp9NzdJzpUpE52_3_aDQKqJl4Y3dLipz&scisig=AAGBfm0AAAAAYp9NzXd97PjOsM0flo-NIuaz2C_VhmbC&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1">[Bibtex]</a>
 			</center></span></td>
     </tr>
 </tbody></table>
@@ -1277,7 +1281,7 @@ augmentation. The preserved areas are highlighted in the K-matrix.
 <!--        </td>-->
 <!--    </tr>-->
 <!--</table>-->
-<table align="center" width="1000">
+<table align="center" width="1050">
     <tbody><tr>
         <td><h3>Related Work</h3></td>
     </tr>
@@ -1285,25 +1289,19 @@ augmentation. The preserved areas are highlighted in the K-matrix.
         <td>
         <ol>
             <li>
-                Tongzhou Wang et al. <a href="https://ssnl.github.io/dataset_distillation/">"Dataset Distillation"</a>, in arXiv preprint 2018
+                Nicklas Hansen et al. <a href="https://nicklashansen.github.io/SVEA/">"Stabilizing Deep Q-Learning with ConvNets and Vision Transformers under Data Augmentation"</a>, in NeurIPS 2021
             </li>
             <li>
-                Bo Zhao et al. <a href="https://arxiv.org/abs/2006.05929">"Dataset Condensation with Gradient Matching"</a>, in ICLR 2020
+                Ilya Kostrikov and Denis Yarats et al. <a href="https://github.com/denisyarats/drq">"Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels"</a>, in ICLR 2021
             </li>
             <li>
-                Bo Zhao and Hakan Bilen. <a href="https://arxiv.org/abs/2102.08259">"Dataset Condensation with Differentiable Siamese Augmentation"</a>, in ICML 2021
+                Nicklas Hansen and Xiaolong Wang. <a href="https://nicklashansen.github.io/SODA/">"Generalization in Reinforcement Learning by Soft Data Augmentation"</a>, in ICRA 2021
             </li>
             <li>
-                Timothy Nguyen et al. <a href="https://arxiv.org/abs/2011.00050">"Dataset Meta-Learning from Kernel Ridge-Regression"</a>, in ICLR 2021
+                Misha Laskin et al. <a href="https://mishalaskin.github.io/rad/">"Reinforcement Learning with Augmented Data"</a>, in NeurIPS 2020
             </li>
             <li>
-                Timothy Nguyen et al. <a href="https://arxiv.org/abs/2107.13034">"Dataset Distillation with Infinitely Wide Convolutional Networks"</a>, in NeurIPS 2021
-            </li>
-            <li>
-                Bo Zhao and Hakan Bilen. <a href="https://arxiv.org/abs/2110.04181">"Dataset Condensation with Distribution Matching"</a>, in arXiv preprint 2021
-            </li>
-            <li>
-                Kai Wang et al. <a href="https://arxiv.org/abs/2203.01531">"CAFE: Learning to Condense Dataset by Aligning Features"</a>, in CVPR 2022
+                Nicklas Hansen et al. <a href="https://nicklashansen.github.io/PAD/">"Self-supervised Policy Adaptation during Deployment"</a>, in ICLR 2021
             </li>
 
         </ol>
@@ -1316,13 +1314,9 @@ augmentation. The preserved areas are highlighted in the K-matrix.
         <td width="400px">
             <left>
                 <center><h1>Acknowledgements</h1></center>
-                We would like to thank Alexander Li, Assaf Shocher, and Gokul Swamy for proofreading our paper. Kangle
-                Deng, Ruihan Gao, Nupur Kumari, Muyang Li, Garuav Parmar, Chonghyuk Song, Sheng-Yu Wang, and Bingliang
-                Zhang as well as Simon Lucey's Vision Group at the University of Adelaide also provided valuable
+                We would like to thank Chengqian Gao, Tiantian Zhang, and Kaizhe Hu for proofreading our paper. Yuzheng Zhuang also provided valuable
                 feedback.
 
-                This work is supported, in part, by the NSF Graduate Research Fellowship under Grant No. DGE1745016, and
-                a grant from from SAP.
 
                 This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
             </left>
